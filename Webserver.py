@@ -46,7 +46,7 @@ def predict(modulename):
             filename = secure_filename(file.filename)
             file.save(os.path.join(app.config['UPLOAD_FOLDER'], filename))
             uploadedImagePath = os.path.join(app.config['UPLOAD_FOLDER'], filename)
-            return json.dumps(ModuleServer.predict(modulename, uploadedImagePath).tolist(), separators=(',',':'))
+            return json.dumps(ModuleServer.predict(modulename, uploadedImagePath), separators=(',',':'))
         else:
             return "Couldnt upload image"
 

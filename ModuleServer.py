@@ -1,6 +1,6 @@
 import os
 import Settings
-from neuralmodules import ModuleLoader
+from NeuralModules import ModuleLoader
 
 loadedModules = {};
 
