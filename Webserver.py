@@ -9,7 +9,7 @@ app = Flask(__name__)
 
 def start():
     app.config['UPLOAD_FOLDER'] = Settings.UPLOAD_FOLDER
-    app.run(host="10.10.5.140")
+    app.run()
     print("Webserver running")
 
 def allowed_file(filename):
